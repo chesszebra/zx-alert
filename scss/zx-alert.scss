@@ -1,0 +1,75 @@
+.zx-alert {
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+
+  .zx-alert-close {
+    @include zx-transition(0.2s linear);
+
+    background: inherit;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 300;
+    opacity: .5;
+    outline: none !important;
+    padding: .75rem 1.25rem;
+    position: relative;
+    right: -1.25rem;
+    text-shadow: 0 1px 0 #fff;
+    top: -.75rem;
+  }
+
+  .zx-alert-close:focus,
+  .zx-alert-close:hover {
+    color: #000;
+    opacity: .75;
+    text-decoration: none;
+  }
+
+  *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.zx-alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.zx-alert-danger a {
+  color: #491217;
+}
+
+.zx-alert-info {
+  color: #004085;
+  background-color: #cce5ff;
+}
+
+.zx-alert-info a {
+  color: #062c33;
+}
+
+.zx-alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.zx-alert-success a {
+  color: #0b2e13;
+}
+
+.zx-alert-warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+.zx-alert-warning a {
+  color: #533f03;
+}
